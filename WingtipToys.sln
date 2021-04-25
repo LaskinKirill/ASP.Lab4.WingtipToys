@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipToys", "WingtipToys\WingtipToys.csproj", "{3F8458A7-02DD-4B8C-B4E0-F6132D51ADDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipToys.Business", "WingtipToys.Business\WingtipToys.Business.csproj", "{C6DEAF42-39C1-409F-AB2C-C41D66524775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipToys.Data", "WingtipToys.Data\WingtipToys.Data.csproj", "{5D557ECE-269F-4E95-97BB-37B7A3B501C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F8458A7-02DD-4B8C-B4E0-F6132D51ADDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8458A7-02DD-4B8C-B4E0-F6132D51ADDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8458A7-02DD-4B8C-B4E0-F6132D51ADDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8458A7-02DD-4B8C-B4E0-F6132D51ADDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DEAF42-39C1-409F-AB2C-C41D66524775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DEAF42-39C1-409F-AB2C-C41D66524775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DEAF42-39C1-409F-AB2C-C41D66524775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DEAF42-39C1-409F-AB2C-C41D66524775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D557ECE-269F-4E95-97BB-37B7A3B501C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D557ECE-269F-4E95-97BB-37B7A3B501C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D557ECE-269F-4E95-97BB-37B7A3B501C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D557ECE-269F-4E95-97BB-37B7A3B501C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
