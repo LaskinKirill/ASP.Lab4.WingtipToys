@@ -8,62 +8,16 @@ namespace WingtipToys
 {
     public class SqlCategoryRepository : ICategoryRepository
     {
+       
         public Category Create(Category category)
         {
-            
             using (var ctx = new WingtipEntities())
             {
                 var added = ctx.Categories.Add(category);
                 ctx.SaveChanges();
                 return added;
             }
-
         }
-
-        public bool Delete(int categoryId)
-        {
-            using (var ctx = new WingtipEntities())
-            {
-                var existing = ctx.Categories.SingleOrDefault(x => x.CategoryID == categoryId);
-                if (existing == null)
-                {
-                    return false;
-                }
-                ctx.Categories.Remove(existing);
-                ctx.SaveChanges();
-                return true;
-            }
-
-        }
-
-        public Category Get(string categoryName)
-        {
-            using (var ctx = new WingtipEntities())
-            {
-                return ctx.Categories.SingleOrDefault(x => x.CategoryName.Equals(categoryName, StringComparison.InvariantCultureIgnoreCase));
-            }
-
-
-        }
-
-        public Category Get(int categoryId)
-        {
-            using (var ctx = new WingtipEntities())
-            {
-                return ctx.Categories.SingleOrDefault(x => x.CategoryID == categoryId);
-            }
-
-        }
-
-        public IEnumerable<Category> GetAll()
-        {
-            using (var ctx = new WingtipEntities())
-            {
-                return ctx.Categories.ToList();
-            }
-
-        }
-
         public Category Update(Category category)
         {
             using (var ctx = new WingtipEntities())
@@ -78,10 +32,51 @@ namespace WingtipToys
                 ctx.SaveChanges();
                 return existing;
             }
-
+        }
+        public bool Delete(int categoryId)
+        {
+            using (var ctx = new WingtipEntities())
+            {
+                var existing = ctx.Categories.SingleOrDefault(x => x.CategoryID == categoryId);
+                if (existing == null)
+                {
+                    return false;
+                }
+                ctx.Categories.Remove(existing);
+                ctx.SaveChanges();
+                return true;
+            }
+        }
+        public Category Get(int categoryId)
+        {
+            using (var ctx = new WingtipEntities())
+            {
+                return ctx.Categories.SingleOrDefault(x => x.CategoryID == categoryId);
+            }
         }
 
-        Data.Models.Category ICategoryRepository.Create(Data.Models.Category category)
+        public Category Get(string categoryName)
+        {
+            using (var ctx = new WingtipEntities())
+            {
+                return ctx.Categories.SingleOrDefault(x => x.CategoryName.Equals(categoryName, StringComparison.InvariantCultureIgnoreCase));
+            }
+        }
+
+        public IEnumerable<Category> GetAll()
+        {
+            using (var ctx = new WingtipEntities())
+            {
+                return ctx.Categories.ToList();
+            }
+        }
+
+        public Data.Models.Category Create(Data.Models.Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Data.Models.Category Update(Data.Models.Category category)
         {
             throw new NotImplementedException();
         }
@@ -97,11 +92,6 @@ namespace WingtipToys
         }
 
         IEnumerable<Data.Models.Category> ICategoryRepository.GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        Data.Models.Category ICategoryRepository.Update(Data.Models.Category category)
         {
             throw new NotImplementedException();
         }
