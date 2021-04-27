@@ -73,6 +73,40 @@ namespace WingtipToys.Data
             }
         }
 
+        Category ICategoryRepository.Create(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        Category ICategoryRepository.Update(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool ICategoryRepository.Delete(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        Category ICategoryRepository.Get(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        Category ICategoryRepository.Get(string categoryName)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<Category> ICategoryRepository.GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        Models.Category ICategoryRepository.Create(Models.Category category)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

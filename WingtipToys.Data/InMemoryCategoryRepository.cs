@@ -63,6 +63,11 @@ namespace WingtipToys.Data
             return _storage.ToList();
         }
 
+        Models.Category ICategoryRepository.Create(Models.Category category)
+        {
+            throw new NotImplementedException();
+        }
+
         private static readonly object _sync = new object();
         private static readonly HashSet<Category> _storage = new HashSet<Category> {
             new Category

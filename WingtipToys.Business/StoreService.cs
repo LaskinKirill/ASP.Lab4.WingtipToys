@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using WingtipToys.Data;
 using WingtipToys.Data.Models;
+using Category = WingtipToys.Data.Models.Category;
+using Product = WingtipToys.Data.Models.Product;
 
 namespace WingtipToys.Business
 {
@@ -118,6 +120,56 @@ namespace WingtipToys.Business
         public IEnumerable<Category> GetAllCategories()
         {
             return _categoryRepository.GetAll();
+        }
+
+        public Data.Models.Product CreateProduct(Data.Models.Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Data.Models.Product UpdateProduct(Data.Models.Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        Data.Models.Product IStoreService.GetProduct(int productId)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<Data.Models.Product> IStoreService.GetAllProducts()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<Data.Models.Product> IStoreService.GetProductByCategoryName(string categoryName)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<Data.Models.Product> IStoreService.GetProductByCategoryId(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Data.Models.Category CreateCategory(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Data.Models.Category UpdateCategory(Data.Models.Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        Data.Models.Category IStoreService.GetCategory(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<Data.Models.Category> IStoreService.GetAllCategories()
+        {
+            throw new NotImplementedException();
         }
     }
 }

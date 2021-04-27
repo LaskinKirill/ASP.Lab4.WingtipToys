@@ -11,5 +11,7 @@ namespace WingtipToys.Data
         Category Get(int categoryId);
         Category Get(string categoryName);
         IEnumerable<Category> GetAll();
+        Models.Category Create(Models.Category category);
+        Models.Category Update(Models.Category category);
     }
 }

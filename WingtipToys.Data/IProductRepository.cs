@@ -11,5 +11,7 @@ namespace WingtipToys.Data
         Product Get(int productId);
         IEnumerable<Product> GetByCategoryId(int categoryId);
         IEnumerable<Product> GetAll();
+        Models.Product Create(Models.Product product);
+        Models.Product Update(Models.Product product);
     }
 }
