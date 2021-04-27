@@ -51,23 +51,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs">
+      <DependentUpon>WingtipModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="InMemoryCategoryRepository.cs" />
     <Compile Include="InMemoryProductRepository.cs" />
     <Compile Include="IProductRepository.cs" />
     <Compile Include="ICategoryRepository.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Product.cs">
+      <DependentUpon>WingtipModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlCategoriesRepository.cs" />
+    <Compile Include="WingtipModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WingtipModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WingtipModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WingtipModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WingtipModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WingtipModel.edmx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <EntityDeploy Include="WingtipModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WingtipModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="WingtipModel.edmx.diagram">
+      <DependentUpon>WingtipModel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DBContext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WingtipModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WingtipModel.edmx</DependentUpon>
+      <LastGenOutput>WingtipModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WingtipModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WingtipModel.edmx</DependentUpon>
+      <LastGenOutput>WingtipModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

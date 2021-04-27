@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WingtipToys
+namespace WingtipToys.Data
 {
     using System;
     using System.Data.Entity;

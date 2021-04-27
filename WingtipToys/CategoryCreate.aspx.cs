@@ -3,6 +3,7 @@ using System.Web.UI.WebControls;
 using WingtipToys.Business;
 using WingtipToys.Data;
 using WingtipToys.Data.Models;
+using Category = WingtipToys.Data.Models.Category;
 
 namespace WingtipToys
 {

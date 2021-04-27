@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\DnsUser\Downloads\lab4_task\task\WingtipToys\WingtipModel.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\DnsUser\Downloads\lab4_task\task\WingtipToys.Data\WingtipModel.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

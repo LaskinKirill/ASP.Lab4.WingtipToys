@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="948503c3bb854cbbb889b3af52517139" Name="Diagram1">
+      <Diagram DiagramId="56742f3d89c04efab36e95a60152fe1d" Name="Diagram1">
         <EntityTypeShape EntityType="WingtipModel.Category" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="WingtipModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="WingtipModel.FK_dbo_Products_dbo_Categories_CategoryID" ManuallyRouted="false" />

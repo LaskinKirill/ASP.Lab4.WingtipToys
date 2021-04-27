@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using WingtipToys.Data;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace WingtipToys
+namespace WingtipToys.Data
 {
     public class SqlCategoryRepository : ICategoryRepository
     {
-       
+     
+
+      
         public Category Create(Category category)
         {
             using (var ctx = new WingtipEntities())
@@ -71,30 +73,6 @@ namespace WingtipToys
             }
         }
 
-        public Data.Models.Category Create(Data.Models.Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Data.Models.Category Update(Data.Models.Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        Data.Models.Category ICategoryRepository.Get(int categoryId)
-        {
-            throw new NotImplementedException();
-        }
-
-        Data.Models.Category ICategoryRepository.Get(string categoryName)
-        {
-            throw new NotImplementedException();
-        }
-
-        IEnumerable<Data.Models.Category> ICategoryRepository.GetAll()
-        {
-            throw new NotImplementedException();
-        }
     }
 
 }
